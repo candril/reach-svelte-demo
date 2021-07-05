@@ -2,9 +2,8 @@ import React, { FC, useState } from "react";
 import styled from "styled-components";
 import { Page, NavLinkSidebarItem } from "@reach/chrome";
 import { Redirect, Route, Switch, useRouteMatch } from "react-router-dom";
-import SvelteComponent from "react-svelte";
-
-import Test from "./test.svelte";
+import { SvelteComponent } from "./SvelteComponent";
+import Hello from "./Hello.svelte";
 
 export const HelloRoutes: FC = () => {
   const match = useRouteMatch();
@@ -25,7 +24,7 @@ export const UsersPage: FC = () => {
         <Container>
           <Title>Users</Title>
           <button onClick={() => setCounter(counter + 1)}>Click</button>
-          <SvelteComponent this={Test} count={counter} />
+          <SvelteComponent component={Hello} count={counter} />
         </Container>
       </Host>
     </Page>
