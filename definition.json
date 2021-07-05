@@ -1,0 +1,14 @@
+{
+  "pluginId": "demo-plug",
+  "extensions": [
+    {
+      "area": "Page",
+      "componentName": "HelloRoutes",
+      "route": "hello"
+    }
+  ],
+  "settings": {
+    "greetingLabel": "Heya - staging - !?",
+    "fontColor": "yellow"
+  }
+}
